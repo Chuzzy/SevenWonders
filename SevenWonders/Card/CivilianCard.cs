@@ -1,4 +1,4 @@
-class CivilianCard(int playerCount, int points) : Card(playerCount)
+class CivilianCard(string name, int playerCount, int points) : Card(name, playerCount)
 {
     public int Points { get; private set; } = points;
 }

@@ -1,4 +1,4 @@
-class MilitaryCard(int playerCount, int militaryStrength) : Card(playerCount)
+class MilitaryCard(string name, int playerCount, int militaryStrength) : Card(name, playerCount)
 {
     public int MilitaryStrength { get; private set; } = militaryStrength;
 }
