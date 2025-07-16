@@ -1,4 +1,6 @@
-class Card(int playerCount)
+class Card(string name, int playerCount)
 {
+    public string Name { get; private set; } = name;
+
     public int PlayerCount { get; private set; } = playerCount;
 }
