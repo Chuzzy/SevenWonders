@@ -1,4 +1,4 @@
-class Game
+public class Game
 {
     public readonly List<Player> Players = [];
 

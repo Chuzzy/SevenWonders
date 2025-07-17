@@ -1,4 +1,4 @@
-struct CardCost(int woodCost)
+public struct CardCost(int woodCost)
 {
     private int woodCost = woodCost;
     public int WoodCost

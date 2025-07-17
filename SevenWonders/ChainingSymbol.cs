@@ -1,4 +1,4 @@
-enum ChainingSymbol
+public enum ChainingSymbol
 {
     Hammer,
     Droplet,
