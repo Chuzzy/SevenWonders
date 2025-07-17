@@ -1,3 +1,5 @@
+using SevenWonders;
+
 public class Player
 {
     public int Score

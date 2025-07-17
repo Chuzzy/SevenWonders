@@ -1,3 +1,5 @@
+namespace SevenWonders;
+
 public struct CardCost(int woodCost)
 {
     private int woodCost = woodCost;

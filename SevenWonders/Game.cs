@@ -1,3 +1,5 @@
+namespace SevenWonders;
+
 public class Game
 {
     public readonly List<Player> Players = [];

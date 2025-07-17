@@ -1,3 +1,5 @@
+namespace SevenWonders;
+
 public enum Resource
 {
     Wood,
