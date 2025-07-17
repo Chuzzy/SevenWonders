@@ -1,4 +1,5 @@
 using SevenWonders;
+using SevenWonders.Cards;
 
 public class Player
 {
