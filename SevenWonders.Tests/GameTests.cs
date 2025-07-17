@@ -1,11 +1,15 @@
 ﻿namespace SevenWonders.Tests;
 
+using SevenWonders;
+
 [TestClass]
 public sealed class GameTests
 {
     [TestMethod]
-    public void TestMethod1()
+    public void Game_Constructor_CreatesGameWithCorrectNumberOfCards()
     {
-        Assert.AreEqual(21, 9 + 10);
+        var game = new Game(3);
+
+        Assert.AreEqual(3, game.Players.Count);
     }
 }
