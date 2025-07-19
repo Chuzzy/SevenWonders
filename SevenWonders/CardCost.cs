@@ -1,17 +1,7 @@
 namespace SevenWonders;
 
-public struct CardCost(int woodCost)
+public readonly struct CardCost(int[] costs, ChainingSymbol chainingSymbol = ChainingSymbol.None)
 {
-    private int woodCost = woodCost;
-    public int WoodCost
-    {
-        readonly get => woodCost;
-        set
-        {
-            if (value < 0)
-                throw new ArgumentException("Wood cost cannot be less than 0.");
-
-            woodCost = value;
-        }
-    }
+    public int[] Costs { get; } = costs;
+    public ChainingSymbol ChainingSymbol { get; } = chainingSymbol;
 }
