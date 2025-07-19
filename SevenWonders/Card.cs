@@ -1,6 +1,6 @@
 namespace SevenWonders;
 
-public class Card(string name, int playerCount)
+public abstract class Card(string name, int playerCount)
 {
     public string Name { get; private set; } = name;
 
