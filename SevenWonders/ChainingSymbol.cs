@@ -2,6 +2,7 @@ namespace SevenWonders;
 
 public enum ChainingSymbol
 {
+    None,
     Hammer,
     Droplet,
     Star,
