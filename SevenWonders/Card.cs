@@ -9,4 +9,6 @@ public abstract class Card(string name, int playerCount, CardCost cardCost, Chai
     public CardCost CardCost { get; private set; } = cardCost;
 
     public ChainingSymbol ProvidedChainingSymbol { get; private set; } = providedChainingSymbol;
+
+    public abstract CardColor Color { get; }
 }
