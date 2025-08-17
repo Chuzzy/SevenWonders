@@ -1,6 +1,6 @@
 namespace SevenWonders.Cards;
 
-public class ResourceCard(string name, int playerCount, CardCost cardCost) : Card(name, playerCount, cardCost)
+public class ResourceCard(string name, int playerCount, int age, CardCost cardCost) : Card(name, playerCount, age, cardCost)
 {
     /// <summary>
     /// An array representing the resources that this card can provide.
