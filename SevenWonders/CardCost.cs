@@ -4,4 +4,6 @@ public readonly struct CardCost(ResourceList costs, ChainingSymbol chainingSymbo
 {
     public ResourceList Costs { get; } = costs;
     public ChainingSymbol ChainingSymbol { get; } = chainingSymbol;
+
+    public static CardCost None => new CardCost();
 }
