@@ -1,5 +1,3 @@
-using System.Runtime.Versioning;
-
 namespace SevenWonders;
 
 public struct ResourceList
