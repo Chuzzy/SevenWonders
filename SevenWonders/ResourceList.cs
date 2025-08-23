@@ -15,6 +15,8 @@ public struct ResourceList
 
     private int[] resources = new int[7];
 
+    public static ResourceList Empty => new() { };
+
     public int Wood
     {
         get => resources[(int)Resource.Wood];
