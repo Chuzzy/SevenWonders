@@ -57,7 +57,7 @@ static class Deck
         { new CivilianCard("Senate", 3, new CardCost(new ResourceList { Wood = 2, Stone = 1, Clay = 1 }), 6), PlayerCount.Three | PlayerCount.Five },
         { new CivilianCard("Town Hall", 3, new CardCost(new ResourceList { Stone = 3, Glass = 1 }), 6), PlayerCount.Three | PlayerCount.Six },
         { new CivilianCard("Pantheon", 3, new CardCost(new ResourceList { Clay = 2, Ore = 1, Glass = 1, Paper = 1, Cloth = 1 }), 7), PlayerCount.Three | PlayerCount.Six },
-        { new CivilianCard("Palace", 3, new CardCost(new ResourceList { Wood = 1, Stone = 1, Ore = 1, Clay = 1, Glass = 1, Paper = 1, Cloth = 1 }), 8), PlayerCount.Three | PlayerCount.Seven }
+        { new CivilianCard("Palace", 3, new CardCost(new ResourceList { Wood = 1, Stone = 1, Ore = 1, Clay = 1, Glass = 1, Paper = 1, Cloth = 1 }), 8), PlayerCount.Three | PlayerCount.Seven },
         #endregion
     };
 
