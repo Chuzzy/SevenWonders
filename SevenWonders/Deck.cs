@@ -80,6 +80,27 @@ static class Deck
         { new MilitaryCard("Circus", 3, new CardCost(new ResourceList { Clay = 3, Ore = 1 }), 3), PlayerCount.Four | PlayerCount.Six },
         { new MilitaryCard("Castrum", 3, new CardCost(new ResourceList { Clay = 2, Wood = 1, Paper = 1 }), 3), PlayerCount.Four | PlayerCount.Seven },
         #endregion
+
+        #region Green Cards - Age I
+        { new ScienceCard("Scriptorium", 1, new CardCost(new ResourceList { Paper = 1 }), ScienceSymbol.Tablet), PlayerCount.Three | PlayerCount.Four },
+        { new ScienceCard("Apothecary", 1, new CardCost(new ResourceList { Cloth = 1 }), ScienceSymbol.Compass), PlayerCount.Three | PlayerCount.Five },
+        { new ScienceCard("Workshop", 1, new CardCost(new ResourceList { Glass = 1 }), ScienceSymbol.Wheel), PlayerCount.Three | PlayerCount.Seven },
+        #endregion
+
+        #region Green Cards - Age II
+        { new ScienceCard("Dispensary", 2, new CardCost(new ResourceList { Ore = 2, Glass = 1 }), ScienceSymbol.Compass), PlayerCount.Three | PlayerCount.Four },
+        { new ScienceCard("Laboratory", 2, new CardCost(new ResourceList { Clay = 2, Paper = 1 }), ScienceSymbol.Wheel), PlayerCount.Three | PlayerCount.Five },
+        { new ScienceCard("Library", 2, new CardCost(new ResourceList { Stone = 2, Cloth = 1 }), ScienceSymbol.Tablet), PlayerCount.Three | PlayerCount.Six },
+        { new ScienceCard("School", 2, new CardCost(new ResourceList { Wood = 1, Paper = 1 }), ScienceSymbol.Tablet), PlayerCount.Three | PlayerCount.Seven },
+        #endregion
+
+        #region Green Cards - Age III
+        { new ScienceCard("University", 3, new CardCost(new ResourceList { Wood = 2, Glass = 1, Paper = 1 }), ScienceSymbol.Tablet), PlayerCount.Three | PlayerCount.Four },
+        { new ScienceCard("Study", 3, new CardCost(new ResourceList { Wood = 1, Glass = 1, Paper = 1 }), ScienceSymbol.Wheel), PlayerCount.Three | PlayerCount.Five },
+        { new ScienceCard("Lodge", 3, new CardCost(new ResourceList { Clay = 2, Cloth = 1, Paper = 1 }), ScienceSymbol.Compass), PlayerCount.Three | PlayerCount.Six },
+        { new ScienceCard("Academy", 3, new CardCost(new ResourceList { Stone = 3, Glass = 1 }), ScienceSymbol.Compass), PlayerCount.Three | PlayerCount.Seven },
+        { new ScienceCard("Observatory", 3, new CardCost(new ResourceList { Ore = 2, Glass = 1, Cloth = 1 }), ScienceSymbol.Wheel), PlayerCount.Three | PlayerCount.Seven },
+        #endregion
     };
 
 
