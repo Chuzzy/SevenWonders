@@ -59,6 +59,27 @@ static class Deck
         { new CivilianCard("Pantheon", 3, new CardCost(new ResourceList { Clay = 2, Ore = 1, Glass = 1, Paper = 1, Cloth = 1 }), 7), PlayerCount.Three | PlayerCount.Six },
         { new CivilianCard("Palace", 3, new CardCost(new ResourceList { Wood = 1, Stone = 1, Ore = 1, Clay = 1, Glass = 1, Paper = 1, Cloth = 1 }), 8), PlayerCount.Three | PlayerCount.Seven },
         #endregion
+
+        #region Red Cards - Age I
+        { new MilitaryCard("Guard Tower", 1, new CardCost(new ResourceList { Clay = 1 }), 1), PlayerCount.Three | PlayerCount.Four },
+        { new MilitaryCard("Barracks", 1, new CardCost(new ResourceList { Ore = 1 }), 1), PlayerCount.Three | PlayerCount.Five },
+        { new MilitaryCard("Stockade", 1, new CardCost(new ResourceList { Wood = 1 }), 1), PlayerCount.Three | PlayerCount.Seven },
+        #endregion
+
+        #region Red Cards - Age II
+        { new MilitaryCard("Stables", 2, new CardCost(new ResourceList { Wood = 1, Ore = 1, Clay = 1 }), 2), PlayerCount.Three | PlayerCount.Five },
+        { new MilitaryCard("Archery Range", 2, new CardCost(new ResourceList { Wood = 2, Ore = 1 }), 2), PlayerCount.Three | PlayerCount.Six },
+        { new MilitaryCard("Walls", 2, new CardCost(new ResourceList { Stone = 3 }), 3), PlayerCount.Three | PlayerCount.Seven },
+        { new MilitaryCard("Training Ground", 2, new CardCost(new ResourceList { Ore = 2, Wood = 1 }), 2), PlayerCount.Four | PlayerCount.Six | PlayerCount.Seven },
+        #endregion
+
+        #region Red Cards - Age III
+        { new MilitaryCard("Arsenal", 3, new CardCost(new ResourceList { Wood = 2, Ore = 1, Cloth = 1 }), 3), PlayerCount.Three | PlayerCount.Five },
+        { new MilitaryCard("Siege Workshop", 3, new CardCost(new ResourceList { Clay = 3, Wood = 1 }), 3), PlayerCount.Three | PlayerCount.Five },
+        { new MilitaryCard("Fortificaitons", 3, new CardCost(new ResourceList { Ore = 3, Clay = 1 }), 3), PlayerCount.Three | PlayerCount.Seven },
+        { new MilitaryCard("Circus", 3, new CardCost(new ResourceList { Clay = 3, Ore = 1 }), 3), PlayerCount.Four | PlayerCount.Six },
+        { new MilitaryCard("Castrum", 3, new CardCost(new ResourceList { Clay = 2, Wood = 1, Paper = 1 }), 3), PlayerCount.Four | PlayerCount.Seven },
+        #endregion
     };
 
 
