@@ -4,5 +4,6 @@ public enum ScienceSymbol
 {
     Compass,
     Tablet,
-    Wheel
+    Wheel,
+    Wild,
 }
