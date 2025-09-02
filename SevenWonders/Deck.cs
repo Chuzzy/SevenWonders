@@ -82,7 +82,7 @@ static class Deck
         { new CoinAndPointCard("Haven", 3, new CardCost(new ResourceList { Wood = 1, Ore = 1, Cloth = 1 }), CardColor.Brown), PlayerCount.Three | PlayerCount.Four },
         { new CoinAndPointCard("Chamber of Commerce", 3, new CardCost(new ResourceList { Clay = 2, Paper = 1 }), CardColor.Gray), PlayerCount.Four | PlayerCount.Six },
         { new CoinAndPointCard("Ludus", 3, new CardCost(new ResourceList { Stone = 2, Paper = 1 }), CardColor.Gray), PlayerCount.Five | PlayerCount.Seven },
-        // TODO: Add Arena card
+        { new CoinsAndPointsForWonderStagesCard("Arena", 3, new CardCost(new ResourceList { Clay = 2, Ore = 1 })), PlayerCount.Three | PlayerCount.Five },
         #endregion
 
         #region Red Cards - Age I
