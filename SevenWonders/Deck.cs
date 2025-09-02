@@ -1,6 +1,7 @@
 namespace SevenWonders;
 
 using SevenWonders.Cards;
+using SevenWonders.Cards.DiscountCards;
 using SevenWonders.Cards.GuildCards;
 
 
@@ -60,6 +61,28 @@ static class Deck
         { new CivilianCard("Town Hall", 3, new CardCost(new ResourceList { Stone = 3, Glass = 1 }), 6), PlayerCount.Three | PlayerCount.Six },
         { new CivilianCard("Pantheon", 3, new CardCost(new ResourceList { Clay = 2, Ore = 1, Glass = 1, Paper = 1, Cloth = 1 }), 7), PlayerCount.Three | PlayerCount.Six },
         { new CivilianCard("Palace", 3, new CardCost(new ResourceList { Wood = 1, Stone = 1, Ore = 1, Clay = 1, Glass = 1, Paper = 1, Cloth = 1 }), 8), PlayerCount.Three | PlayerCount.Seven },
+        #endregion
+
+        #region Yellow Cards - Age I
+        { new CoinCard("Tavern", 1, CardCost.None, 5), PlayerCount.Four | PlayerCount.Five | PlayerCount.Seven },
+        { new DiscountCard("West Trading Post", 1, CardCost.None, Neighbor.Left, new ResourceList { Wood = 1, Stone = 1, Ore = 1, Clay = 1 }), PlayerCount.Three | PlayerCount.Seven },
+        { new DiscountCard("East Trading Post", 1, CardCost.None, Neighbor.Left, new ResourceList { Wood = 1, Stone = 1, Ore = 1, Clay = 1 }), PlayerCount.Three | PlayerCount.Seven },
+        { new DiscountCard("Marketplace", 1, CardCost.None, Neighbor.Right, new ResourceList { Wood = 1, Stone = 1, Ore = 1, Clay = 1 }), PlayerCount.Three | PlayerCount.Six },
+        #endregion
+
+        #region Yellow Cards - Age II
+        { new ResourceCard("Caravansery", 2, new CardCost(new ResourceList { Wood = 2 }), new ResourceList { Wood = 1, Stone = 1, Ore = 1, Clay = 1 }), PlayerCount.Three | PlayerCount.Five | PlayerCount.Six },
+        { new ResourceCard("Forum", 2, new CardCost(new ResourceList { Clay = 2 }), new ResourceList { Glass = 1, Paper = 1, Cloth = 1}), PlayerCount.Three | PlayerCount.Six | PlayerCount.Seven },
+        { new NeighborCoinCard("Vineyard", 2, CardColor.Brown, 1), PlayerCount.Three | PlayerCount.Six },
+        { new NeighborCoinCard("Bazaar", 2, CardColor.Gray, 2), PlayerCount.Four | PlayerCount.Seven },
+        #endregion
+
+        #region Yellow Cards - Age III
+        { new CoinAndPointCard("Lighthouse", 3, new CardCost(new ResourceList { Stone = 1, Glass = 1 }), CardColor.Yellow), PlayerCount.Three | PlayerCount.Six },
+        { new CoinAndPointCard("Haven", 3, new CardCost(new ResourceList { Wood = 1, Ore = 1, Cloth = 1 }), CardColor.Brown), PlayerCount.Three | PlayerCount.Four },
+        { new CoinAndPointCard("Chamber of Commerce", 3, new CardCost(new ResourceList { Clay = 2, Paper = 1 }), CardColor.Gray), PlayerCount.Four | PlayerCount.Six },
+        { new CoinAndPointCard("Ludus", 3, new CardCost(new ResourceList { Stone = 2, Paper = 1 }), CardColor.Gray), PlayerCount.Five | PlayerCount.Seven },
+        // TODO: Add Arena card
         #endregion
 
         #region Red Cards - Age I
