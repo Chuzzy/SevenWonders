@@ -1,6 +1,8 @@
 namespace SevenWonders;
 
 using SevenWonders.Cards;
+using SevenWonders.Cards.GuildCards;
+
 
 static class Deck
 {
@@ -100,6 +102,16 @@ static class Deck
         { new ScienceCard("Lodge", 3, new CardCost(new ResourceList { Clay = 2, Cloth = 1, Paper = 1 }), ScienceSymbol.Compass), PlayerCount.Three | PlayerCount.Six },
         { new ScienceCard("Academy", 3, new CardCost(new ResourceList { Stone = 3, Glass = 1 }), ScienceSymbol.Compass), PlayerCount.Three | PlayerCount.Seven },
         { new ScienceCard("Observatory", 3, new CardCost(new ResourceList { Ore = 2, Glass = 1, Cloth = 1 }), ScienceSymbol.Wheel), PlayerCount.Three | PlayerCount.Seven },
+        #endregion
+
+        #region Purple Cards - Age III
+        // TODO: add Shipowners, Decorators, Builders, Scientists guilds
+        { new NeighbourGuildCard("Workers Guild", new CardCost(new ResourceList { Ore = 2, Wood = 1, Stone = 1, Clay = 1 }), CardColor.Brown), PlayerCount.Guild },
+        { new NeighbourGuildCard("Craftsmens Guild", new CardCost(new ResourceList { Stone = 2, Ore = 1 }), CardColor.Gray, 2), PlayerCount.Guild },
+        { new NeighbourGuildCard("Magistrates Guild", new CardCost(new ResourceList { Wood = 3, Stone = 1, Cloth = 1 }), CardColor.Blue), PlayerCount.Guild },
+        { new NeighbourGuildCard("Traders Guild", new CardCost(new ResourceList { Glass = 1, Paper = 1, Cloth = 1 }), CardColor.Yellow), PlayerCount.Guild },
+        { new NeighbourGuildCard("Spies Guild", new CardCost(new ResourceList { Clay = 2, Glass = 1 }), CardColor.Red), PlayerCount.Guild },
+        { new NeighbourGuildCard("Philosophers Guild", new CardCost(new ResourceList { Clay = 2, Paper = 1, Cloth = 1 }), CardColor.Green), PlayerCount.Guild },
         #endregion
     };
 
