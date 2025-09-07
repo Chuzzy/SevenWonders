@@ -137,6 +137,8 @@ static class Deck
         { new NeighborGuildCard("Philosophers Guild", new CardCost(new ResourceList { Clay = 2, Paper = 1, Cloth = 1 }), CardColor.Green), PlayerCount.Guild },
         { new CoinAndPointCard("Shipowners Guild", 3, new CardCost(new ResourceList { Wood = 3, Glass = 1, Paper = 1 }), CardColor.Brown | CardColor.Gray | CardColor.Purple), PlayerCount.Guild },
         { new ScienceCard("Scientists Guild", 3, new CardCost(new ResourceList { Wood = 2, Ore = 2, Paper = 1 }), ScienceSymbol.Wild), PlayerCount.Guild },
+        { new CompletedWonderCard("Decorators Guild", new CardCost(new ResourceList { Ore = 2, Stone = 1, Cloth = 1 })), PlayerCount.Guild },
+        { new NeighborWonderCard("Builders Guild", new CardCost(new ResourceList { Stone = 3, Clay = 2, Glass = 1 } )), PlayerCount.Guild },
         #endregion
     };
 
